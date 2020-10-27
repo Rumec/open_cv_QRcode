@@ -1,3 +1,5 @@
+import sys
+
 import cv2
 
 # Initialize the webcam as the source of images
@@ -23,8 +25,7 @@ while True:
             print("Data encoded: ", data_new)
     if data_new:
         data_prev = data_new
-    # print(data_new, data_prev)
-    cv2.imshow("img", img)
+    cv2.imshow("QR code reader", img)
     if cv2.waitKey(1) == ord("q"):
         break
 
