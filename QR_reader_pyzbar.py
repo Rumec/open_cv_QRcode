@@ -23,7 +23,7 @@ while True:
 
     for barcode in decode(img):
         # Parsing out decoded data
-        print(str(barcode.data)[1:])
+        print(str(barcode.data)[1:].strip('\''))
 
         ####################################################################################
         # Following code is only for testing purposes, remove if you need better performance
