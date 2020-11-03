@@ -9,9 +9,9 @@ def generate_qr(data, file):
     data = data
     # Generating QR code
     img = qrcode.make(data)
-    img.save(file)
+    img.save(file + ".png")
 
 
 data_to_be_encoded = input("Enter the data: ")
 filename = input("Enter name of the file (without suffix): ")
-generate_qr(data_to_be_encoded, filename + ".png")
+generate_qr(data_to_be_encoded, filename)
