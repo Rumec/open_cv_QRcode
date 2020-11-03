@@ -23,6 +23,8 @@ while True:
 
     for barcode in decode(img):
         # Parsing out decoded data
+        # original data starts with letter 'b' followed by encoded information in apostrophes, this will remove those
+        # chars and leaves only data
         print(str(barcode.data)[1:].strip('\''))
 
         ####################################################################################
