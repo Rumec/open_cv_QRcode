@@ -1,5 +1,9 @@
 # open_cv_QRcode
 
-*qr_marker.py* - Uses webcam as video source and analyzes input video. If QR code is found, draws bounding box around it and prints out encoded data
+*QR_reader_pyzbar* - uses webcam to read information in QR code
 
 *QRcode_generator.py* - Encodes data on input into QR code image
+
+*qr_marker.py* - Old version of QR code reader
+
+

@@ -1,3 +1,6 @@
+"""
+First version, doesn't work so well - use QR_reader_pyzbar.py insted
+"""
 import cv2
 
 # Initialize the webcam as the source of images

@@ -2,7 +2,8 @@
 There is need to install zbar DLLs:
 
 Linux: sudo apt-get install libzbar0
-apple: brew install zbar
+Apple: brew install zbar
+Windows: Windows has it by default
 
 then install pyzbar library: pip3 install pyzbar
 """
