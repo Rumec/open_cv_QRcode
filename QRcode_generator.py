@@ -4,13 +4,14 @@
 import qrcode
 
 
-def generate_qr(data, filename):
+def generate_qr(data, file):
     # Data to be encoded to QR code
     data = data
     # Generating QR code
     img = qrcode.make(data)
-    img.save(filename)
+    img.save(file)
+
 
 data_to_be_encoded = input("Enter the data: ")
-filename = input("Enter name of the file: ")
-generate_qr(data_to_be_encoded, filename)
+filename = input("Enter name of the file (without suffix): ")
+generate_qr(data_to_be_encoded, filename + ".png")
